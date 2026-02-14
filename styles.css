@@ -308,3 +308,31 @@ input:focus, textarea:focus{border-color: rgba(103,183,255,.55)}
   }
   .nav-links.open{display:flex}
 }
+.form-box {
+    border: 2px solid #003366;
+    background-color: #f4f8fc;
+    padding: 20px;
+    margin: 30px 0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.form-box h3 {
+    margin-top: 0;
+    color: #003366;
+}
+
+.form-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #003366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.form-button:hover {
+    background-color: #0055aa;
+}
