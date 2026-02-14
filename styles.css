@@ -319,32 +319,39 @@ input:focus, textarea:focus{border-color: rgba(103,183,255,.55)}
   /* CRITICAL: override dark theme text color */
   color: #1a1a1a;
 }
+/* ===== Optional Form Box (Light panel, forced readable text) ===== */
+.form-box{
+  background: #f4f8fc;
+  border: 2px solid #003366;
+  padding: 22px;
+  margin: 25px 0;
+  border-radius: 14px;
+  text-align: center;
+  color: #1a1a1a !important;
+}
 
-.form-box h3 {
+.form-box h3{
   margin-top: 0;
-  color: #003366;
+  color: #003366 !important;
 }
 
-.form-box p {
-  color: #333;
+.form-box p{
+  color: #333 !important;
 }
 
-.form-button {
+.form-button{
   display: inline-block;
   margin-top: 14px;
   padding: 12px 18px;
   background: #003366;
-  color: #ffffff;
+  color: #ffffff !important;
   text-decoration: none;
   border-radius: 10px;
   font-weight: 700;
-  transition: 0.2s ease;
 }
 
-.form-button:hover {
+.form-button:hover{
   background: #0055aa;
   transform: translateY(-2px);
 }
-.form-box { border: 2px solid #003366; padding: 20px; margin: 20px 0; border-radius: 8px; background: #f4f8fc; }
-.form-button { display: inline-block; margin-top: 10px; padding: 10px 16px; text-decoration: none; border-radius: 6px; background: #003366; color: #fff; }
 
