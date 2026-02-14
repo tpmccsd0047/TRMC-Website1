@@ -218,14 +218,40 @@
            
           </p>
 
-          <form name="contact" method="POST" data-netlify="true">
+<form
+  name="contact"
+  method="POST"
+  data-netlify="true"
+  netlify-honeypot="bot-field"
+  action="/thanks.html"
+  class="form"
+>
+  <!-- Netlify form name -->
   <input type="hidden" name="form-name" value="contact" />
 
-  <input type="text" name="name" placeholder="Your Name" required>
-  <input type="email" name="email" placeholder="Email" required>
-  <textarea name="message" placeholder="Your Message"></textarea>
+  <!-- Honeypot field (spam trap) -->
+  <p style="display:none;">
+    <label>
+      Don’t fill this out if you’re human: <input name="bot-field" />
+    </label>
+  </p>
 
-  <button type="submit">Send</button>
+  <label>
+    <span>Your Name</span>
+    <input type="text" name="name" placeholder="Your Name" required />
+  </label>
+
+  <label>
+    <span>Email</span>
+    <input type="email" name="email" placeholder="Email" required />
+  </label>
+
+  <label>
+    <span>Your Message</span>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+  </label>
+
+  <button type="submit" class="button primary">Send</button>
 </form>
 
         </div>
