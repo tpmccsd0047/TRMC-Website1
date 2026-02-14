@@ -355,3 +355,26 @@ input:focus, textarea:focus{border-color: rgba(103,183,255,.55)}
   transform: translateY(-2px);
 }
 
+/* Mobile default: hidden */
+.nav-links {
+  display: none;
+}
+
+/* When opened */
+.nav-links.is-open {
+  display: block;
+}
+
+/* Desktop: always show links, hide toggle */
+@media (min-width: 768px) {
+  .nav-toggle {
+    display: none;
+  }
+  .nav-links {
+    display: flex; /* or block—match your layout */
+    display: flex;
+  }
+  .nav-links.is-open {
+    display: flex;
+  }
+}
